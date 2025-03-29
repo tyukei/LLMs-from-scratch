@@ -1,7 +1,7 @@
 # 大規模言語モデルをスクラッチで作ろう
 \[ [英語版](README.md) | [日本語] \]
 
-このリポジトリは、GPTのようなLLMを開発・事前学習・ファインチューニングするコードを含んでおり、書籍『[大規模言語モデルをスクラッチで作ろう](https://amzn.to/4fqvn0D)』の公式コードリポジトリです。
+このリポジトリは、GPTのようなLLMを開発・事前学習・ファインチューニングするコードを含んでおり、書籍『[つくりながら学ぶ！LLM 自作入門 ](https://amzn.asia/d/1BufK0J)』の公式コードリポジトリです。
 
 <br>
 <br>
@@ -10,13 +10,13 @@
 
 <br>
 
-[*大規模言語モデルをスクラッチで作ろう*](http://mng.bz/orYv) では、大規模言語モデル（LLM）がどのように動作するのかを、コードをゼロから段階的に書きながら内側から理解できるように解説します。書籍内では、テキストや図、例を用いて各ステージをわかりやすく説明しながら、独自LLMを作る方法を案内しています。
+[つくりながら学ぶ！LLM 自作入門 ](https://amzn.asia/d/1BufK0J) では、大規模言語モデル（LLM）がどのように動作するのかを、コードをゼロから段階的に書きながら内側から理解できるように解説します。書籍内では、テキストや図、例を用いて各ステージをわかりやすく説明しながら、独自LLMを作る方法を案内しています。
 
 本書で紹介している教育向けの小規模モデルを作るための方法は、ChatGPTのベースとなるような大規模ファウンデーションモデルの開発手順を縮小したものと同じ手順を採用しています。さらに、この書籍では大規模事前学習済みモデルを読み込み、ファインチューニングするためのコードも含まれています。
 
 - 公式[ソースコードリポジトリ](https://github.com/rasbt/LLMs-from-scratch)  
 - [出版社サイト（Manning）での書籍紹介ページ](http://mng.bz/orYv)  
-- [Amazon.comの書籍紹介ページ](https://www.amazon.com/gp/product/1633437167)  
+- [Amazon.comの書籍紹介ページ](https://amzn.asia/d/1BufK0J) 
 - ISBN 9781633437166
 
 <a href="http://mng.bz/orYv#reviews"><img src="https://sebastianraschka.com//images/LLMs-from-scratch-images/other/reviews.png" width="220px"></a>
@@ -102,7 +102,7 @@ git clone --depth 1 https://github.com/rasbt/LLMs-from-scratch.git
   - [Byte Pair Encoding (BPE) トークナイザをスクラッチから実装する](ch02/05_bpe-from-scratch/bpe-from-scratch.ipynb)
   - [様々なByte Pair Encoding (BPE) 実装の比較](ch02/02_bonus_bytepair-encoder)
   - [埋め込み層と線形層の違いを理解する](ch02/03_bonus_embedding-vs-matmul)
-  - [シンプルな数値例を使ったDataloaderの直感](ch02/04_bonus_dataloader-intuition)
+  - [シンプルな数値例を使ったDataloader](ch02/04_bonus_dataloader-intuition)
 - **第3章: アテンションメカニズムをコーディングする**
   - [効率的なマルチヘッドアテンション実装の比較](ch03/02_bonus_efficient-multihead-attention/mha-implementations.ipynb)
   - [PyTorchのバッファーを理解する](ch03/03_understanding-buffers/understanding-buffers.ipynb)
@@ -139,7 +139,7 @@ git clone --depth 1 https://github.com/rasbt/LLMs-from-scratch.git
 
 Manningの[フォーラム](https://livebook.manning.com/forum?product=raschka&page=1)や[GitHub Discussions](https://github.com/rasbt/LLMs-from-scratch/discussions)で、どんなフィードバックでも歓迎しています。同様に、質問やアイデアの共有も遠慮なく投稿ください。
 
-ただし、このリポジトリは印刷書籍のコードを扱っているため、メインの章コード自体を拡張するようなプルリクエストは（印刷された内容との乖離を避けるために）お受けできません。読者の皆さんが本と一貫した内容をスムーズに体験できるようにしたいからです。
+ただし、このリポジトリは印刷書籍のコードを扱っているため、メインの章コード自体を拡張するようなプルリクエストは（印刷された内容との乖離を避けるために）受け付けていません。読者の皆さんが本と一貫した内容をスムーズに体験できるようにしたいからです。
 
 &nbsp;
 ## 引用について
