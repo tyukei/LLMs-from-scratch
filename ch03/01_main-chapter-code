@@ -7,7 +7,7 @@
         "colab_type": "text"
       },
       "source": [
-        "<a href=\"https://colab.research.google.com/github/tyukei/LLMs-from-scratch/blob/feature%2Fch03/ch03/01_main-chapter-code/ch03_ja.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+        "<a href=\"https://colab.research.google.com/github/tyukei/LLMs-from-scratch/blob/feature%2Fch03/ch03/01_main-chapter-code\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
       ]
     },
     {
@@ -53,11 +53,11 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 1,
       "id": "e58f33e8-5dc9-4dd5-ab84-5a011fa11d92",
       "metadata": {
         "id": "e58f33e8-5dc9-4dd5-ab84-5a011fa11d92",
-        "outputId": "f074f964-16a8-4a9a-e46e-554106b83fe6",
+        "outputId": "1f011d33-8348-4fd7-f607-b9a6c2efd8cc",
         "colab": {
           "base_uri": "https://localhost:8080/"
         }
@@ -232,6 +232,32 @@
     },
     {
       "cell_type": "markdown",
+      "source": [
+        "**シンプルアテンション機構の流れ**\n",
+        "\n",
+        "<img src=\"https://sebastianraschka.com/images/LLMs-from-scratch-images/ch03_compressed/12.webp\" width=\"200px\">\n",
+        "\n",
+        "**アテンションスコア[ω]: クエリとのドット積**\n",
+        "\n",
+        "<img src=\"https://sebastianraschka.com/images/LLMs-from-scratch-images/ch03_compressed/08.webp\" width=\"200px\">\n",
+        "\n",
+        "\n",
+        "**アテンションウェイト[α]: アテンションスコアの正規化(足して１にする)**\n",
+        "\n",
+        "<img src=\"https://sebastianraschka.com/images/LLMs-from-scratch-images/ch03_compressed/09.webp\" width=\"200px\">\n",
+        "\n",
+        "\n",
+        "**コンテキストベクトル[z]: アテンションウェイトとの加重合計**\n",
+        "\n",
+        "<img src=\"https://sebastianraschka.com/images/LLMs-from-scratch-images/ch03_compressed/10.webp\" width=\"200px\">"
+      ],
+      "metadata": {
+        "id": "5BKJZfduhVW3"
+      },
+      "id": "5BKJZfduhVW3"
+    },
+    {
+      "cell_type": "markdown",
       "id": "d269e9f1-df11-4644-b575-df338cf46cdf",
       "metadata": {
         "id": "d269e9f1-df11-4644-b575-df338cf46cdf"
@@ -261,8 +287,10 @@
       },
       "source": [
         "<img src=\"https://sebastianraschka.com/images/LLMs-from-scratch-images/ch03_compressed/07.webp\" width=\"400px\">\n",
-        "- （この図の数字は1つに切り捨てられていることに注意してください\n",
-        "視覚的な混乱を減らすための小数点の後の数字。同様に、他の数字には切り捨てられた値も含まれている場合があります）"
+        "\n",
+        "- この図の数字は1つに切り捨てられていることに注意してください\n",
+        "視覚的な混乱を減らすための小数点の後の数字。\n",
+        "- 同様に、他の数字には切り捨てられた値も含まれている場合があります"
       ]
     },
     {
